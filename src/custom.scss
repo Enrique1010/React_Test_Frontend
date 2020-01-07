@@ -1,0 +1,20 @@
+// Override default variables before the import
+$body-bg: #000;
+// Import Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap.scss';
+
+h1{
+    color: white;
+}
+
+.card-grey{
+    background-color: #212121;
+}
+
+.modal-form{
+    padding: 10px;
+}
+
+.bg-darkb{
+    background-color: #000;
+}
