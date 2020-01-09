@@ -1,9 +1,11 @@
 import React from 'react';
-import Card from './Card';
+import Card from '../Card';
+import { Alert } from 'react-bootstrap';
 
 const CardList = ({books}) => {
 
-    return(
+    return books.length === 0? <Alert variant="danger">Oh oh! No Books Aviable!</Alert>
+        :(
         <div>
             {
                 books.map((data, i) => {

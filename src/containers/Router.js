@@ -3,9 +3,7 @@ import {BrowserRouter, Route, Switch} from 'react-router-dom';
 //components
 import Details from '../components/Details';
 import App from './App';
-import ErrorPage from '../components/Error';
-//import PostBook from '../components/PostBook';
-import UpdateBook from '../components/UpdateBook';
+import ErrorPage from '../components/partials/Error';
 
 class Router extends Component {
     render(){
@@ -15,7 +13,6 @@ class Router extends Component {
                     <Route exact path="/" component={App}/>
                     <Route exact path="/books/news" component={App}/>
                     <Route exact path="/book/:id" component={Details}/>
-                    <Route exact path="/books/update" component={UpdateBook}/>
                     <Route component={ErrorPage}/>
                 </Switch>
             </BrowserRouter>
